@@ -82,10 +82,10 @@ function validarFormulario() {
 
     if (campoVacio) {
 
-        const mensaje = document.createElement("p");
+        const mensaje = document.createElement("h2");
         mensaje.id = "mensaje_error";
-        mensaje.textContent = "Por favor, completa todos los campos.";
-        mensaje.style.color = "red";
+        mensaje.textContent = "POR FAVOR, COMPLETE TODO LOS CAMPOS";
+        mensaje.style.color = "#7D0000";
         campoVacio.closest("main").insertBefore(mensaje, campoVacio.closest("main").firstChild.nextSibling);
 
 
