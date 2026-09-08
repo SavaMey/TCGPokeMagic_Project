@@ -8,7 +8,7 @@ function agregarAlCarrito(id, nombre, precio) {
     if (cartaExistente) {
         cartaExistente.cantidad += 1;
     } else {
-        carrito.push({id, nombre, precio, cantidad: 1});
+        carrito.push({ id, nombre, precio, cantidad: 1 });
     }
     mostrarCarrito();
     alert("Carta al carrito ugu");
@@ -90,7 +90,7 @@ function validarFormulario() {
 
 
         campoVacio.focus();
-        campoVacio.scrollIntoView({behavior: "smooth", block: "center"});
+        campoVacio.scrollIntoView({ behavior: "smooth", block: "center" });
 
         return false;
     }
