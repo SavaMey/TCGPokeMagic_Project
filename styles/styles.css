@@ -15,9 +15,23 @@ img {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 24px;
     border-bottom: 1px solid #dfdfdf;
     padding: 12px;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+header img {
+    height: 60px; 
+    width: auto;
+    object-fit: contain;
 }
 
 header section:nth-child(2) {
@@ -38,11 +52,20 @@ header a:hover {
 
 /* CONTENIDO PRINCIPAL */
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
 .centrador-abajo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    gap: 16px;
+    width: 100%;
 }
 
 .centrador-abajo>img {
@@ -53,14 +76,36 @@ header a:hover {
     border-radius: 12px;
 }
 
+.btn-comprar {
+    display: flex;
+    width: fit-content;
+    margin: 20px auto 40px;  
+    background-color: orange;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: red;
+    transform: translateY(-2px);
+}
+
 
 /* INFORMACION */
 
 #informacion {
-    padding: 20px;
+    width: 100%;
 }
 
-#informacion h2 {
+#informacion p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.5;
     text-align: center;
 }
 
@@ -106,7 +151,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 12px 0;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 
@@ -122,6 +167,11 @@ footer {
     header section:nth-child(2) {
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    main {
+        gap: 24px;
+        padding: 20px 15px;
     }
 
     .centrador-abajo {
@@ -169,6 +219,11 @@ footer {
 
     header a {
         font-size: 14px;
+    }
+
+    main {
+        gap: 16px;
+        padding: 15px 10px;
     }
 
     .centrador-abajo {
